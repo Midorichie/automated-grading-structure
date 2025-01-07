@@ -10,6 +10,11 @@ path = "contracts/grading-system.clar"
 clarity_version = 2
 epoch = 2.1
 
+[contracts.grade-review]
+path = "contracts/grade-review.clar"
+clarity_version = 2
+epoch = 2.1
+
 [repl.analysis]
 passes = ["check_checker"]
 
