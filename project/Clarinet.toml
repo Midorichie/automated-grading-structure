@@ -1,0 +1,20 @@
+[project]
+name = "automated-grading-system"
+description = "AI-powered grading system on Stacks blockchain"
+authors = ["Your Name <your.email@example.com>"]
+telemetry = false
+requirements = []
+
+[contracts.grading-system]
+path = "contracts/grading-system.clar"
+clarity_version = 2
+epoch = 2.1
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = true
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
